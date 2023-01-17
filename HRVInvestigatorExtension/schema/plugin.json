@@ -1,0 +1,8 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "HRVInvestigator",
+  "description": "HRVInvestigator settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}

@@ -1,0 +1,50 @@
+.hrv
+    background-color: rgb(42, 40, 40) !important
+
+
+
+
+// define grid layout for the notebook
+
+.page-container
+   display: grid !important
+   grid-template-columns: auto 1fr 2rem 3fr auto !important
+   grid-template-areas: ". sidebar . main-content ." !important
+
+   .sidebar
+        grid-area: sidebar !important
+    .main-content
+        grid-area: main-content !important
+        position relative !important
+        padding: 0 !important
+        left 0 !important
+        display: grid !important
+        grid-template-areas: "visSelect1"
+        "vis1"
+        "window1"
+        "visSelect2"
+        "vis2"
+
+        * 
+            display: flex;
+            position relative !important
+            margin: 0 !important
+            padding: 0 !important
+            top: 0 !important
+            left: 0 !important
+            
+
+        .visSelect1
+            grid-area: visSelect1 !important
+            display: flex !important
+            flex-direction: column !important
+        .vis1
+            grid-area: vis1 !important
+        .window1
+            grid-area: window1 !important
+        .visSelect2
+            grid-area: visSelect2 !important
+        .vis2
+            grid-area: vis2 !important
+
+        

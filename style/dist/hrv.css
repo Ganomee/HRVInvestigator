@@ -1,0 +1,44 @@
+.hrv {
+  background-color: #2a2828 !important;
+}
+.page-container {
+  display: grid !important;
+  grid-template-columns: auto 1fr 2rem 3fr auto !important;
+  grid-template-areas: ". sidebar . main-content ." !important;
+}
+.page-container .sidebar {
+  grid-area: sidebar !important;
+}
+.page-container .main-content {
+  grid-area: main-content !important;
+  position: relative !important;
+  padding: 0 !important;
+  left: 0 !important;
+  display: grid !important;
+  grid-template-areas: "visSelect1";
+}
+.page-container .main-content * {
+  display: flex;
+  position: relative !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+.page-container .main-content .visSelect1 {
+  grid-area: visSelect1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.page-container .main-content .vis1 {
+  grid-area: vis1 !important;
+}
+.page-container .main-content .window1 {
+  grid-area: window1 !important;
+}
+.page-container .main-content .visSelect2 {
+  grid-area: visSelect2 !important;
+}
+.page-container .main-content .vis2 {
+  grid-area: vis2 !important;
+}
