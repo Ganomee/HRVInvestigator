@@ -18,10 +18,15 @@ class sample(param.Parameterized):
         self.optionalArgument1 = optionalArgument1
 
     def run(self, data: DataHistoryItem, model_file):
-        print("starting to evaluate model")
-        # print(str(model_file))
-        # create random data of length of original data (either 1 or 0)
-        model_res = np.random.randint(2, size=len(data.data)).tolist()
-        print("finished evaluating")
+        try:
+            print("starting to evaluate model")
 
-        return model_res
+            print(str(model_file))
+            # create random data of length of original data (either 1 or 0)
+            model_res = np.random.randint(2, size=len(data.data)).tolist()
+            print("finished evaluating")
+
+            return model_res
+        except:
+            print("Not working!")
+            
